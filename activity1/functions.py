@@ -23,3 +23,10 @@ def lunch_lady(str1, str2 = "mystery meat"):
 
 lunch_lady('Johnny', 'hamburger')
 lunch_lady('Jane')
+
+def sum_n_product(int1, int2):
+	return (int1 + int2, int1 * int2)
+
+print(sum_n_product(2, 5))
+print(sum_n_product(9, 1))
+print(sum_n_product(0, 101))
