@@ -18,8 +18,8 @@ print(inner_func(2, 3))
 print(inner_func(12, 6))
 print(inner_func(999, 123456789))
 
-def lunch_lady(str1, str2 = "mystery meat"):
-	print(f"{str1} would like to have {str2} for lunch")
+def lunch_lady(name, lunch = "mystery meat"):
+	print(f"{name} would like to have {lunch} for lunch")
 
 lunch_lady('Johnny', 'hamburger')
 lunch_lady('Jane')
