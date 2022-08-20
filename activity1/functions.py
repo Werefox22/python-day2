@@ -30,3 +30,8 @@ def sum_n_product(int1, int2):
 print(sum_n_product(2, 5))
 print(sum_n_product(9, 1))
 print(sum_n_product(0, 101))
+
+def alias_arb_args(*args):
+	arb_args(*args)
+
+alias_arb_args("Shrek", "is", "cool")
