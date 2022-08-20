@@ -35,3 +35,26 @@ def alias_arb_args(*args):
 	arb_args(*args)
 
 alias_arb_args("Shrek", "is", "cool")
+
+def arb_mean(*ints):
+	total = 0
+	for i in ints:
+		total += i
+		print(total)
+	
+	print(total / len(ints))
+
+arb_mean(1, 2, 3, 1, 10, 8)
+arb_mean(2, 1)
+
+def arb_longest_string(*strings):
+	longest = ""
+	for i in strings:
+		if len(i) > len(longest):
+			longest = i
+
+	return longest
+
+print(arb_longest_string("one", "three", "0"))
+print(arb_longest_string("123456789", "12345678", "1234567", "123456"))
+
